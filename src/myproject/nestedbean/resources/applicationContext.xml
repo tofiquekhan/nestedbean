@@ -8,13 +8,14 @@
  <property name="ename" value="Himanshu"/>
  <property name="esal" value="25000"/>
  <property name="eaddr" value="Indore"/>
- <property name="acc">
- 	<bean id="account" class="myproject.nestedbean.beans.Account">
+ <property name="acc" ref="account"/>
+ 	
+
+ </bean>
+ <bean id="account" class="myproject.nestedbean.beans.Account">
  		<property name="accNo" value="1234"/>
  		<property name="accName" value="Himanshu"/>
  		<property name="accType" value="Saving"/>
  		<property name="balance" value="600000"/>
  	</bean>
- </property>
- </bean>
  </beans>
